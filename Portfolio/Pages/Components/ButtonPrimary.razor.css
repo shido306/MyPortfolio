@@ -1,0 +1,28 @@
+.buttonPrimary{
+	display: flex;
+	gap: 0.3rem;
+
+	width: fit-content;
+
+	align-items: center;
+
+	border-radius: 9999px;
+
+	padding:  0.5rem;
+
+	background: linear-gradient(135deg, #0b4577, #0ba0a8);
+
+	font-size: 1rem;
+}
+
+.buttonPrimary a {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 500;
+}
+
+.buttonPrimary:hover img {
+	color: white;
+	transform: translateX(6px);
+}

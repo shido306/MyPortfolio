@@ -1,0 +1,89 @@
+﻿@using System.Globalization
+@using Portfolio.Models
+
+
+@if (project != null){
+	<!-- プロジェクトカードコンテナ -->
+	<div class="card"> 
+		<!-- 左側  -->   
+		<div class="card-content">
+			<!-- プロジェクト名 -->
+			<h3>@project.ProjectName</h3>
+			<!-- プロジェクトの期間 -->
+			@if (!string.IsNullOrEmpty(project.Started.ToString()))
+			{
+				<time>
+					@project.Started.ToString("yyyy年MM月dd日", new CultureInfo("ja-JP"))
+					-
+					@(project.Ended != null ? project.Ended.ToString("yyyy年MM月dd日", new CultureInfo("ja-JP")) : "Now")
+				</time>
+			}
+			<div class="media">
+				<!-- プロジェクトイメージ -->
+				@if (project.Images != null && project.Images.Any())
+				{
+					@foreach (var image in project.Images)
+					{
+						@if( image.IsVideo == false ){
+							<!-- プロジェクト画像 -->
+							<a href="@image.Src" target="_blank" rel="noopener noreferrer">
+								<img src="@image.Src" alt="@image.Alt" width="@image.Width" height="@image.Height"/>
+							</a>
+						}else{
+							<!-- プロジェクト動画 -->
+							<iframe 
+								src="@image.Src"
+								width="@image.Width"
+								height="@image.Height">
+							</iframe>
+						}
+					}
+				}
+			</div>
+			<!-- プロジェクトの説明 -->
+			<div class="description">
+				@if (project.Descriptions != null){
+					@foreach(var description in project.Descriptions){
+						<h4>@description.Title</h4>
+						<p>@description.Content</p>
+					}
+				}
+			</div>
+			<!-- プロジェクトで使用した技術  -->
+			<h4>Technology</h4>
+			<div class="technology">
+				@if (project.Technologies != null)
+				{
+					@foreach (var tech in project.Technologies)
+					{
+						<div class="technology_child">
+							<img src="@tech.Icon" alt="@tech.Name" width="20" height="20" />
+							@tech.Name
+						</div>
+					}
+				}
+			</div>
+			<!-- プロジェクトのリンク -->
+			<div class="link">
+				<!-- Link -->
+				@if (project.Links != null)
+				{
+					@foreach (var link in project.Links){
+						<!-- <a href="@link.LinkUrl" target="_blank" rel="noopener noreferrer"></a> -->
+						<ButtonPrimary Href="@link.LinkUrl" Text="@link.LinkText"/>
+					}
+				}
+				@if (project.GithubLink != string.Empty)
+				{
+					<!-- Github Link -->
+					<!-- <ButtonSecondary Href="@project.GithubLink" Text="View on Github" /> -->
+					<ButtonPrimary Href="@project.GithubLink" Text="View on Github" />
+				}
+			</div>
+		</div>
+	</div>
+}
+
+@code {
+	[Parameter] public Project project { get; set; }
+}

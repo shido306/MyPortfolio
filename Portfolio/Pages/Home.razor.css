@@ -1,0 +1,31 @@
+﻿/* プロジェクト一覧 */
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+	margin-top: 0.75rem;
+	width: 80vw;
+
+	text-align: center;
+}
+
+.column-home{
+	width: calc(100% - 8px);
+}
+
+.nav-project{
+	width: 100%;
+
+	margin-top: 0.75rem;
+}
+
+.nav-project a {
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 500;
+
+	font-size: 2rem;
+}

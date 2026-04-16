@@ -1,0 +1,159 @@
+/* =========================
+   カード本体
+========================= */
+.card {
+	width: 100%;
+	max-width: 900px;
+	margin: 0.5rem auto;
+	
+	box-sizing: border-box;
+	
+	border-radius: 16px;
+	background: rgb(20, 20, 20);
+
+	border-width: 1px;
+	--tw-border-opacity: 1;
+	border-color: rgb(0 0 0 / var(--tw-border-opacity));
+
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	padding: 1rem;
+
+	overflow: hidden;
+}
+
+.card:hover {
+	background: rgb(31, 31, 31);
+}
+
+/* =========================
+   テキストエリア
+========================= */
+.card-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* タイトル */
+.card-content h3 {
+	margin: 0.7rem 0 0 0;
+	font-size: 2.4rem;
+	color: #eee;
+	font-family: sans-serif;
+}
+
+/* 日付 */
+.card-content time {
+	font-size: 0.85rem;
+	color: #aaa;
+	text-align: right;
+}
+
+.description{
+	margin: 0.5rem 0 0 0;
+}
+
+/* サブタイトル */
+h4 {
+	margin: 0.5rem 0 0 0;
+	font-size: 1.5rem;
+	color: #eee;
+	background: rgb(56, 56, 56);
+	border-radius: 16px 16px 0 0;
+	text-align: left;
+
+	width: fit-content;
+	max-width: 50%;
+	height: 2.5rem;
+
+	padding: 0.5rem 1rem;
+}
+
+/* 説明文 */
+.description p,
+.technology {
+	margin: 0;
+	font-size: 0.95rem;
+	line-height: 1.6;
+	color: #ddd;
+
+	border-radius: 0 16px 16px 16px;
+	background: rgb(56, 56, 56);
+
+	overflow-wrap: break-word;
+
+	text-align: left;
+	padding: 0.5rem 1rem;
+}
+
+/* =========================
+   メディア
+========================= */
+.media {
+	display: flex;
+	gap: 0.5rem;
+
+	width: 100%;
+
+	overflow: auto;
+
+	align-items: center;
+
+	margin: 0;
+	padding: 0;
+}
+
+/* 画像 */
+.media img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+
+	border-radius: 12px;
+	border: 1px solid rgba(255,255,255,0.1);
+
+	background: #0f0f0f;
+}
+
+/* 動画 */
+.media iframe {
+	object-fit: contain;
+	border: none;
+	display: block;
+	height: auto;
+
+	aspect-ratio: 16 / 9;
+}
+
+/* =========================
+   技術スタック
+========================= */
+.technology {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.technology_child {
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+
+	padding: 0.25rem 0.5rem;
+	border-radius: 6px;
+	background: rgba(255,255,255,0.05);
+	font-size: 0.8rem;
+}
+
+/* =========================
+   ボタンエリア
+========================= */
+.link {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+	margin: 0.5rem 0 0 0;
+}

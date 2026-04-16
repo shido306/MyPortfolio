@@ -1,0 +1,11 @@
+﻿<div class="buttonPrimary">
+	<a href="@Href">
+		@Text
+		<img src="images/icon/Link_Icon.svg" width="20" height="20" />
+	</a>
+</div>
+@code {
+    [Parameter]  public string Href { get; set; }
+    [Parameter] public string Text { get; set; }
+}
+

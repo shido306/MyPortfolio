@@ -1,0 +1,30 @@
+﻿@page "/Work"
+@using Portfolio.Services
+@using Portfolio.Models
+@using Portfolio.Pages.Components
+@inject ProjectServices projectServices
+
+<PageTitle>Projects</PageTitle>
+
+
+<section>
+	<h1>My Projects</h1>
+	
+	<!-- Projects -->
+	<div class="project">
+		@foreach (var project in Projects)
+		{
+			<div class="column">
+				<ProjectCard project="@project" />
+			</div>
+		}  
+	</div>
+</section>
+
+@code {
+    private List<Project> Projects;
+    protected override void OnInitialized()
+    {
+        Projects = projectServices.GetProjects();
+    }
+}

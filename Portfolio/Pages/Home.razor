@@ -1,7 +1,36 @@
 ﻿@page "/"
+@using Portfolio.Services
+@using Portfolio.Models
+@using Portfolio.Pages.Components
+@inject ProjectServices projectServices
 
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
+
+<!-- プロジェクトセクション -->
+<section class="project">
+	<!-- プロジェクトの表示 -->
+	@foreach (var project in Projects)
+	{
+		<div class="column-home">
+			<ProjectCard project="@project" />
+		</div>
+	}
+	<!-- 全プロジェクトへのリンク -->
+	<div class="nav-project">
+		<a href="/work">
+			...and see more Projects!
+		</a>
+	</div>
+</section>
+
+@code {
+    private List<Project> Projects;
+    protected override void OnInitialized()
+    {
+        Projects = projectServices.GetProjects().Take(2).ToList();
+    }
+}
