@@ -1,24 +1,24 @@
 /* プロジェクト一覧 */
 .project {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-
-	margin-top: 0.75rem;
+	margin: 0.75rem auto;
 	width: 90vw;
 
 	text-align: center;
 
+	columns: 2;
+
+	gap: 8px;
 }
 
 .column{
-	width: calc(50% - 8px);
+	width: 100%;
 	grid-column: span 1 / span 1;
+	margin-bottom: 0.5rem;
 }
 
 /* 画面が狭いと1列 */
 @media (max-width: 800px) {
-    .column {
-        flex: 1 1 100%;
+    .project {
+		columns: 1;
     }
 }

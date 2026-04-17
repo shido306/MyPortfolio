@@ -2,6 +2,20 @@
     display: flex;
 }
 
+.title{
+    height: 3.5rem;
+	width: fit-content + 1rem;
+    padding: 0.5rem;
+
+	align-items: center;
+    display: flex;
+
+	font-family: sans-serif;
+    font-size: 1.2rem;
+	font-weight: 700;
+	color: rgb(214, 214, 214);
+}
+
 .nav-item {
     font-size: 0.9rem;
     padding: 0.5rem 0;
