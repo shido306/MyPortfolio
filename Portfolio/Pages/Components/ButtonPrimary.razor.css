@@ -22,6 +22,10 @@
 	font-weight: 500;
 }
 
+.buttonPrimary img{
+	transition: all 0.5s ease;
+}
+
 .buttonPrimary:hover img {
 	color: white;
 	transform: translateX(6px);
