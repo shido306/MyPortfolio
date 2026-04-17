@@ -4,10 +4,11 @@
     flex-wrap: wrap;
     gap: 16px;
 
-	margin: 0.75rem auto;
+	margin: 0 auto 6rem;
 	width: 90vw;
 
 	text-align: center;
+	flex-direction: column;
 }
 
 .column-home{
