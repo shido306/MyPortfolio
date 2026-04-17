@@ -8,7 +8,7 @@
 
 	border-radius: 9999px;
 
-	padding:  0.5rem;
+	padding: 0.75rem;
 
 	background: linear-gradient(135deg, #0b4577, #0ba0a8);
 
@@ -24,6 +24,7 @@
 
 .buttonPrimary img{
 	transition: all 0.5s ease;
+	margin: auto 0;
 }
 
 .buttonPrimary:hover img {
