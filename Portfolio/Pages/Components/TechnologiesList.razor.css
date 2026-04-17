@@ -14,6 +14,7 @@
 	background: rgba(255,255,255,0.05);
 	font-size: 0.9rem;
 	color:white;
+	backdrop-filter: blur(5px);
 
 	width: 100%;
 	justify-content: space-between;
@@ -22,8 +23,6 @@
 
 	transition: all 0.3s ease;
 }
-
-
 
 .technology_child:hover {
 	background: rgba(235, 235, 235, 0.05);
