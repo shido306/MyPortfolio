@@ -1,0 +1,39 @@
+﻿<div class="technology">
+	@foreach(var tech in TechnologyLists){
+		<div class="technology_child">
+			<img src="@tech.Icon" alt="@tech.Name" width="32" height="32" />
+			@tech.Name
+		</div>
+	}
+</div>
+
+@code {
+
+	private List<TechnologyList> TechnologyLists = new List<TechnologyList>
+		{
+			new TechnologyList{ Name = "C#", Icon = "images/icon/CSharp_Icon.svg" },
+			new TechnologyList{ Name = "C++", Icon = "images/icon/C++_Icon.svg" },
+			new TechnologyList{ Name = "C", Icon = "images/icon/C_Icon.svg" },
+			new TechnologyList{ Name = "Unity", Icon = "images/icon/Unity_Icon.svg" },
+			new TechnologyList{ Name = "Blazor", Icon = "images/icon/Blazor_Icon.svg" },
+			new TechnologyList{ Name = ".NET Core", Icon = "images/icon/Dotnet_Icon.svg" },
+			new TechnologyList{ Name = "Blazor WebAssembly", Icon = "images/icon/WebAssembly_Icon.svg" },
+			new TechnologyList{ Name = "Entity Framework Core", Icon = "images/icon/EFCore_Icon.svg" },
+			new TechnologyList{ Name = "Github", Icon = "images/icon/Github_Icon.svg" },
+			new TechnologyList{ Name = "Git", Icon = "images/icon/Git_Icon.svg" },
+			new TechnologyList{ Name = "VSCode", Icon = "images/icon/VSCode_Icon.svg" },
+			new TechnologyList{ Name = "Blender", Icon = "images/icon/Blender_Icon.svg" },
+			new TechnologyList{ Name = "Siv3D", Icon = "images/icon/Siv3D_Icon.svg" },
+			new TechnologyList{ Name = "Linux", Icon = "images/icon/Linux_Icon.svg" },
+			new TechnologyList{ Name = "Solaris", Icon = "images/icon/Solaris_Icon.svg" },
+			new TechnologyList{ Name = "AviUtl", Icon = "images/icon/Aviutl_Icon.svg" },
+			new TechnologyList{ Name = "PowerApps", Icon = "images/icon/PowerApps_Icon.svg" },
+			new TechnologyList{ Name = "Teraterm", Icon = "images/icon/Teraterm_Icon.svg" },
+		};
+
+	public class TechnologyList
+	{
+		public string Name { get; set; }
+		public string Icon { get; set; }
+	}
+}
