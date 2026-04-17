@@ -1,10 +1,10 @@
 ﻿/* プロジェクト一覧 */
-.project{
+.sction{
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
 
-	margin-top: 0.75rem;
+	margin: 0.75rem auto;
 	width: 90vw;
 
 	text-align: center;
@@ -14,13 +14,13 @@
 	width: calc(100% - 8px);
 }
 
-.nav-project{
+.nav-sction{
 	width: 100%;
 
 	margin-top: 0.75rem;
 }
 
-.nav-project a {
+.nav-sction a {
 	text-align: center;
 	color: white;
 	text-decoration: none;

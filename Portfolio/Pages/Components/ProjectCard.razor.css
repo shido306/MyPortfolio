@@ -4,7 +4,7 @@
 .card {
 	width: 100%;
 	max-width: 900px;
-	margin: 0.5rem auto;
+	margin: 0 auto;
 	
 	box-sizing: border-box;
 	
@@ -35,14 +35,6 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-}
-
-/* タイトル */
-.card-content h3 {
-	margin: 0.7rem 0 0 0;
-	font-size: 2.4rem;
-	color: #eee;
-	font-family: sans-serif;
 }
 
 /* 日付 */
