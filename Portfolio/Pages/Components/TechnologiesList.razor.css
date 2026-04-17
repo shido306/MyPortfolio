@@ -19,6 +19,16 @@
 	justify-content: space-between;
 
 	position: relative;
+
+	transition: all 0.3s ease;
+}
+
+
+
+.technology_child:hover {
+	background: rgba(235, 235, 235, 0.05);
+	transform: translateY(-4px);
+	box-shadow: 0 12px 40px rgba(0,0,0,0.3);
 }
 
 @media (max-width: 900px) {
