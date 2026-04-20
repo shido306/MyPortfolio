@@ -1,0 +1,47 @@
+﻿@using Portfolio.Services
+@using Portfolio.Models
+
+@inject FooterServices footerServices;
+
+<div class="footer-main">
+	<div class="footer-left">
+		<div class="footer-title">
+			<p>shido's Portfolio</p>
+			<div class="version">
+				v.1.0
+			</div>
+		</div>
+		<div>
+			Created with using Blazor WASM
+		</div>
+		<div>
+			
+		</div>
+	</div>
+	<div class="footer-right">
+		@if(FooterCategories != null){
+			@foreach(var footerItem in FooterCategories){
+				<div class="footer-right-parts">
+					@footerItem.Title
+					@foreach(var link in footerItem.Links){
+						<a href="@link.LinkUrl" target="@(link.Target ?? "_self")">
+							@link.LinkText
+						</a>
+					}
+				</div>
+			}
+		}
+	</div>
+</div>
+<div class="copylight">
+	© 2026 - @DateTime.Now.Year shido. All rights reserved.
+</div>
+
+@code {
+	private List<FooterCategory> FooterCategories { get; set; }
+
+    protected override void OnInitialized()
+    {
+        FooterCategories = footerServices.GetFooters();
+    }
+}

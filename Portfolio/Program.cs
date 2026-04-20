@@ -5,6 +5,7 @@ using Portfolio.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.Services.AddScoped<ProjectServices>();
+builder.Services.AddScoped<FooterServices>();
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 

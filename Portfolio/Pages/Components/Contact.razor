@@ -1,0 +1,28 @@
+﻿<h3>Contact me</h3>
+
+<div>
+	@foreach(var contact in _contact){
+		<div>
+			<a href="@contact.Href">
+				<img src="@contact.Icon" width="32" height="32" />
+				@contact.Title
+			</a>
+		</div>
+	}
+</div>
+
+@code {
+	private List<ContactList> _contact = new List<ContactList>
+	{
+		new ContactList{ Title = "Gmail", Icon = "", Href = "shido2910@gmail.com" },
+		new ContactList{ Title = "Discode", Icon = "", Href = "" },
+		new ContactList{ Title = "Twitter / X", Icon = "", Href = "https://x.com/shido306" },
+		new ContactList{ Title = "Giuhub", Icon = "", Href = "https://github.com/shido306" }
+	};
+
+	public class ContactList{
+		public string Title { get; set; }
+		public string Icon { get; set; }
+		public string Href { get; set; }
+	}
+}

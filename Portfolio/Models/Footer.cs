@@ -27,6 +27,7 @@ public class Link
 {    
 	public string LinkUrl { get; set; }					// リンクのURL
 	public string LinkText { get; set; }				// ボタンのテキスト
+	public string Target { get; set; }					// ターゲット
 }
 
 public class Technology
@@ -54,4 +55,10 @@ public class NavItem
     public string Href { get; set; } = string.Empty;
     public string Title { get; set; }= string.Empty;
     public string Target { get; set; } = string.Empty;
+}
+
+public class FooterCategory
+{
+	public string Title { get; set; }
+	public List<Link> Links { get; set; }
 }
