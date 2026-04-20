@@ -83,39 +83,46 @@ h1:focus {
         content: "An error has occurred."
     }
 
-.loading-progress {
-    position: absolute;
-    display: block;
-    width: 8rem;
-    height: 8rem;
-    inset: 20vh 0 auto 0;
-    margin: 0 auto 0 auto;
-}
-
-    .loading-progress circle {
-        fill: none;
-        stroke: #e0e0e0;
-        stroke-width: 0.6rem;
-        transform-origin: 50% 50%;
-        transform: rotate(-90deg);
-    }
-
-        .loading-progress circle:last-child {
-            stroke: #1b6ec2;
-            stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
-            transition: stroke-dasharray 0.05s ease-in-out;
-        }
-
-.loading-progress-text {
-    position: absolute;
+.loading-screen {
     text-align: center;
-    font-weight: bold;
-    inset: calc(20vh + 3.25rem) 0 auto 0.2rem;
+
+	padding-top: 30vh;
 }
 
-    .loading-progress-text:after {
-        content: var(--blazor-load-percentage-text, "Loading");
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255,255,255,0.2);
+    border-top: 4px solid #38bdf8;
+    border-radius: 50%;
+    margin: 0 auto;
+
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
     }
+}
+
+.loading-text {
+    margin-top: 15px;
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#app {
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #0b3961,
+        #0b7b81
+    );
+}
 
 code {
     color: #c02d76;
