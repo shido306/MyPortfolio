@@ -70,14 +70,14 @@
 				{
 					@foreach (var link in project.Links){
 						<!-- <a href="@link.LinkUrl" target="_blank" rel="noopener noreferrer"></a> -->
-						<ButtonPrimary Href="@link.LinkUrl" Text="@link.LinkText"/>
+						<ButtonPrimary Href="@link.LinkUrl" Text="@link.LinkText" target="@(link.Target ?? "_self")"/>
 					}
 				}
 				@if (project.GithubLink != string.Empty)
 				{
 					<!-- Github Link -->
 					<!-- <ButtonSecondary Href="@project.GithubLink" Text="View on Github" /> -->
-					<ButtonPrimary Href="@project.GithubLink" Text="View on Github" />
+					<ButtonPrimary Href="@project.GithubLink" Text="View on Github" target="_blank"/>
 				}
 			</div>
 		</div>

@@ -219,7 +219,8 @@ public class ProjectServices : IProjectServices
 					new Link
 					{
 						LinkUrl = "https://play.google.com/store/apps/details?id=com.Bottle70.RakugakiProjects&_gl=1*vq3bcr*_up*MQ..*_ga*MTk0MTI3OTUuMTc3NjMxODM2Nw..*_ga_6VGGZHMLM2*czE3NzYzMTgzNjYkbzEkZzAkdDE3NzYzMTgzNjYkajYwJGwwJGgw&hl=ja",
-						LinkText = "Google Play Store"
+						LinkText = "Google Play Store",
+						Target = "_blank"
 					}
 				},
                 GithubLink = string.Empty,
@@ -274,7 +275,8 @@ public class ProjectServices : IProjectServices
 					new Link
 					{
 						LinkUrl = "https://play.google.com/store/apps/details?id=com.Reverieate.Mos&hl=ja",
-						LinkText = "Google Play Store"
+						LinkText = "Google Play Store",
+						Target = "_blank"
 					}
 				},
 				GithubLink = string.Empty,
