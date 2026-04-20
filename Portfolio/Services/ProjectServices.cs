@@ -10,8 +10,9 @@ public class ProjectServices : IProjectServices
         {
             new Project
             {
-                ProjectName = "ポートフォリオサイト",
+                ProjectName = "Portfolio Site",
                 Started = DateTime.Parse("2026-04-14"),
+                Ended = DateTime.Parse("2026-04-21"),
 				Descriptions = new List<Description>
 				{
 					new Description
@@ -24,10 +25,10 @@ public class ProjectServices : IProjectServices
 				{
 					new ProImage
 					{
-						Src = "images/projects/portfolio.png",
+						Src = "images/projects/Portfolio.png",
 						Alt = " main page ",
-						Width = 1920,
-						Height = 1080
+						Width = 950,
+						Height = 560
 					}
 				},
 				Technologies = new List<Technology>
