@@ -31,7 +31,7 @@ public class FooterServices
 				Title = "Contact me",
 				Links = new List<Link>
 				{
-					new Link { LinkText = "Email", LinkUrl = "mailto:shido2910@gmail.com", Target = "_blank" },
+					new Link { LinkText = "Gmail", LinkUrl = "mailto:shido2910@gmail.com", Target = "_blank" },
 					new Link { LinkText = "Discord", LinkUrl = "https://discord.com/users/shido306", Target = "_blank" },
 					new Link { LinkText = "Twitter / X", LinkUrl = "https://x.com/shido306", Target = "_blank" },
 				}
