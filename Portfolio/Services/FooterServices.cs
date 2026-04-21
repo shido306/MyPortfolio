@@ -10,7 +10,7 @@ public class FooterServices
 		{
 			new FooterCategory
 			{
-				Title = "Important Links",
+				Title = "Internal Links",
 				Links = new List<Link>
 				{
 					new Link { LinkText = "Home", LinkUrl = "" },
