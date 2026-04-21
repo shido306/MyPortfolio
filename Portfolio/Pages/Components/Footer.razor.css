@@ -1,7 +1,6 @@
 .footer-main{
-	display: flex;
-	align-items: flex-start;
-	gap: 0.3rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 
 	padding: 0.25rem 0.5rem;
 
@@ -13,9 +12,13 @@
 	text-align: left;
 }
 
-.footer-left{
-	flex: 1;
+@media (max-width: 800px) {
+    .footer-main {
+		grid-template-columns: 1fr;
+    }
+}
 
+.footer-left{
 	padding-left: 5rem;
 	padding-right: 2.5rem;
 }
@@ -53,8 +56,6 @@
 
 	padding-left: 2.5rem;
 	padding-right: 5rem;
-
-	flex: 1;
 }
 
 .footer-right-parts{
