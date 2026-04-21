@@ -1,0 +1,28 @@
+.contact{
+	display: flex;
+	gap: 0.5rem;
+	flex-direction: column;
+	columns: 1;
+}
+
+.contact-link{
+	color: white;
+	text-decoration: none;
+
+	background: rgba(0, 0, 0, 0.11);
+
+	border-radius: 10px;
+	border-color: 1px rgba(0, 0, 0, 0.9);
+
+	padding: 0.5rem 0.75rem;
+
+	width: 10rem;
+	justify-content: space-between;
+
+	margin: 0 auto;
+}
+
+.contact-link:hover {
+	background: rgba(235, 235, 235, 0.05);
+	box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
