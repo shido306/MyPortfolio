@@ -27,8 +27,8 @@ public class ProjectServices : IProjectServices
 					{
 						Src = "images/projects/Portfolio.png",
 						Alt = " main page ",
-						Width = 950,
-						Height = 560
+						Width = 1343,
+						Height = 606
 					}
 				},
 				Technologies = new List<Technology>
