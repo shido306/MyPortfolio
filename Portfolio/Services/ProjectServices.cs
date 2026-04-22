@@ -315,7 +315,7 @@ public class ProjectServices : IProjectServices
                 Technologies = new List<Technology>
 				{
 					new Technology{ Name = "Siv3D", Icon = "images/icon/Siv3D_Icon.svg"},
-					new Technology{ Name = "C++", Icon = "images/icon/C++_Icon.svg"},
+					new Technology{ Name = "C++", Icon = "images/icon/CPuls_ICon.svg"},
 					new Technology{ Name = "VSCode", Icon = "images/icon/VSCode_Icon.svg"}
 				},
 				Links = new List<Link>
