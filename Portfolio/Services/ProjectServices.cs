@@ -19,6 +19,12 @@ public class ProjectServices : IProjectServices
 					{
 						Title = "Purpose",
 						Content = ".NET 10とASP.NET Core Blazor WebAssemblyの学習"
+					},
+					new Description
+					{
+						Title = "Technical Highlights",
+						Content = @"GitHub Pagesでのデプロイを行い、静的サイトとして公開。
+									コンポーネント設計によりUIの再利用性と保守性を向上。"
 					}
 				},
 				Images = new List<ProImage>
@@ -71,6 +77,12 @@ public class ProjectServices : IProjectServices
 					{
 						Title = "Team size",
 						Content = "3人"
+					},
+					new Description
+					{
+						Title = "Technical Highlights",
+						Content = @"プログラマ以外のメンバーでもパラメータ調整ができるように、ScriptableObject を用いてデータとロジックを分離しました。
+									ローカルマルチプレイおよび複数種類のコントローラーに対応するため、Unity Input System を導入し、入力デバイスに依存しない柔軟な入力管理を実装しました。"
 					}
 				},
                 Images = new List<ProImage>
@@ -121,6 +133,11 @@ public class ProjectServices : IProjectServices
 					{
 						Title = "Team size",
 						Content = "1人"
+					},
+					new Description
+					{
+						Title = "Technical Highlights",
+						Content = "実行時のオブジェクト生成コストを削減するため、オブジェクトプールを導入し、パフォーマンスの改善を行いました。"
 					}
 				},
 				Images = new List<ProImage>
@@ -171,6 +188,11 @@ public class ProjectServices : IProjectServices
 					{
 						Title = "Team size",
 						Content = "3人"
+					},
+					new Description
+					{
+						Title = "Technical Highlights",
+						Content = @"CSVファイルを用いたデータ管理により、イラスト情報（画像・名称・説明）を外部から編集可能な構成を実装"
 					}
 				},
                 Images = new List<ProImage>
@@ -251,6 +273,13 @@ public class ProjectServices : IProjectServices
 					{
 						Title = "Team size",
 						Content = "2人"
+					},
+					new Description
+					{
+						Title = "Technical Highlights",
+						Content = @"アセット管理とロード効率の向上のため、Unity Addressables を使用しました。
+									収益化のため、Google AdMob を導入し、広告表示機能を実装しました。
+									多言語対応のため、Unity Localization を使用し、言語切り替え機能を実装しました。"
 					}
 				},
                 Images = new List<ProImage>
@@ -307,6 +336,11 @@ public class ProjectServices : IProjectServices
 					{
 						Title = "Team size",
 						Content = "1人"
+					},
+					new Description
+					{
+						Title = "Technical Highlights",
+						Content = @"Siv3D・C++ を用いてゲームを開発し、描画・入力・サウンド処理を統合的に実装"
 					}
 				},
                 Images = new List<ProImage>
