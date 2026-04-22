@@ -137,7 +137,7 @@ public class ProjectServices : IProjectServices
 					new Description
 					{
 						Title = "Technical Highlights",
-						Content = "実行時のオブジェクト生成コストを削減するため、オブジェクトプールを導入し、パフォーマンスの改善を行いました。"
+						Content = "オブジェクトプールを導入し、生成・破棄処理を削減することでパフォーマンス低下を防止。"
 					}
 				},
 				Images = new List<ProImage>
@@ -340,7 +340,8 @@ public class ProjectServices : IProjectServices
 					new Description
 					{
 						Title = "Technical Highlights",
-						Content = @"Siv3D・C++ を用いてゲームを開発し、描画・入力・サウンド処理を統合的に実装"
+						Content = @"Siv3D・C++ を用いてゲームを開発し、描画・入力・サウンド処理を統合的に実装。
+									ゲームループや衝突判定などの基礎ロジックを自作し、リアルタイム処理の理解を深めた。"
 					}
 				},
                 Images = new List<ProImage>
