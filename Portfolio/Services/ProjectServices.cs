@@ -355,7 +355,7 @@ public class ProjectServices : IProjectServices
 					new Link
 					{
 						LinkText = "exeファイル",
-						LinkUrl = "https://drive.google.com/file/d/1np0FFlSg3_ntw4f2RESh2kmu9qk1xwiq/view?usp=sharing"
+						LinkUrl = "https://drive.google.com/file/d/1np0FFlSg3_ntw4f2RESh2kmu9qk1xwiq/view?usp=sharing",
 						Target = "_blank"
 					}
 				},
