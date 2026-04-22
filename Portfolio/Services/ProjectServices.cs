@@ -311,6 +311,38 @@ public class ProjectServices : IProjectServices
 				},
                 Images = new List<ProImage>
                 {
+                    new ProImage
+                    {
+                        Src = "images/projects/STG_001.png",
+                        Alt = "main",
+                        Width = 405,
+                        Height = 720,
+                        IsVideo = false
+                    },
+                    new ProImage
+                    {
+                        Src = "images/projects/STG_002.png",
+                        Alt = "main",
+                        Width = 405,
+                        Height = 720,
+                        IsVideo = false
+                    },
+                    new ProImage
+                    {
+                        Src = "images/projects/STG_003.png",
+                        Alt = "main",
+                        Width = 405,
+                        Height = 720,
+                        IsVideo = false
+                    },
+                    new ProImage
+                    {
+                        Src = "images/projects/STG_004.png",
+                        Alt = "main",
+                        Width = 405,
+                        Height = 720,
+                        IsVideo = false
+                    }
                 },
                 Technologies = new List<Technology>
 				{
@@ -320,6 +352,12 @@ public class ProjectServices : IProjectServices
 				},
 				Links = new List<Link>
 				{
+					new Link
+					{
+						LinkText = "exeファイル",
+						LinkUrl = "https://drive.google.com/file/d/1np0FFlSg3_ntw4f2RESh2kmu9qk1xwiq/view?usp=sharing"
+						Target = "_blank"
+					}
 				},
 				GithubLink = string.Empty,
 			}
